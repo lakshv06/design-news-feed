@@ -10,6 +10,9 @@ https://www.twitter.com
 https://www.quora.com
 https://www.reddit.com
 
+# figma design
+https://www.figma.com/design/y4q9wTgMp28dcKWSdQCoHI/Front-end-system-design-practice?node-id=0-1&t=VHVQ2TFcPaO1DqGu-0
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
