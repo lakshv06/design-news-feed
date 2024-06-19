@@ -3,6 +3,7 @@ import { useState } from "react";
 import { TopHeadlinesDataInterface } from "../interface/global.interfaces";
 import apiService from "../api-services/ApiService";
 import { toast } from "react-toastify";
+import NewsFeedCard from './NewsFeedCard';
 
 function HomePage():ReactElement{
     const [topHeadlinesData, setTopHeadlinesData] = useState<TopHeadlinesDataInterface>();
@@ -33,7 +34,9 @@ function HomePage():ReactElement{
             {loadingState&& <p>Loading...</p>}
             {!loadingState && (
                 topHeadlinesData?.articles.map((item, index)=>(
-                    <p key = {index}> {item?.author}</p>
+                    <div key = {index}>
+                        <NewsFeedCard NewsFeedCardData = {item}/>
+                    </div>
                 ))
             )}
         </div>

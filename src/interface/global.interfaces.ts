@@ -1,3 +1,4 @@
+import NewsFeedCard from '../pages/NewsFeedCard';
 export interface ArticlesData{
     source:{
         id: string;
@@ -16,4 +17,8 @@ export interface TopHeadlinesDataInterface{
     status: string;
     totalResults :number;
     articles: ArticlesData[]; 
+}
+
+export interface NewsFeedCardProps{
+    NewsFeedCardData: ArticlesData
 }
