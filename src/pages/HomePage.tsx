@@ -4,6 +4,7 @@ import { TopHeadlinesDataInterface } from "../interface/global.interfaces";
 import apiService from "../api-services/ApiService";
 import { toast } from "react-toastify";
 import NewsFeedCard from './NewsFeedCard';
+import LoadingIndicator from "./LoadingIndicator";
 
 function HomePage():ReactElement{
     const [topHeadlinesData, setTopHeadlinesData] = useState<TopHeadlinesDataInterface>();
@@ -31,7 +32,7 @@ function HomePage():ReactElement{
 
     return (
         <div>
-            {loadingState&& <p>Loading...</p>}
+            {loadingState&& <LoadingIndicator/>}
             {!loadingState && (
                 topHeadlinesData?.articles.map((item, index)=>(
                     <div key = {index}>

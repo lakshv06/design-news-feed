@@ -1,4 +1,5 @@
-import NewsFeedCard from '../pages/NewsFeedCard';
+import { Dispatch, SetStateAction } from "react";
+
 export interface ArticlesData{
     source:{
         id: string;
@@ -21,4 +22,9 @@ export interface TopHeadlinesDataInterface{
 
 export interface NewsFeedCardProps{
     NewsFeedCardData: ArticlesData
+}
+
+export interface NewsFeedCardModalProps{
+    NewsFeedCardModalData: ArticlesData;
+    setShowMore: Dispatch<SetStateAction<boolean>>
 }

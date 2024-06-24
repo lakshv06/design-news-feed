@@ -3,7 +3,7 @@ import { ReactElement } from "react";
 function NavHeader (): ReactElement{
     return(
         <div>
-            fghjk
+            EDIT NAVHEADER FILE FOR PROPER UX
         </div>
     );
 }
