@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/design-news-feed/static/css/main.ce6011a7.css",
+    "main.js": "/design-news-feed/static/js/main.0cb6ba07.js",
+    "static/js/453.1a126377.chunk.js": "/design-news-feed/static/js/453.1a126377.chunk.js",
+    "index.html": "/design-news-feed/index.html",
+    "main.ce6011a7.css.map": "/design-news-feed/static/css/main.ce6011a7.css.map",
+    "main.0cb6ba07.js.map": "/design-news-feed/static/js/main.0cb6ba07.js.map",
+    "453.1a126377.chunk.js.map": "/design-news-feed/static/js/453.1a126377.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce6011a7.css",
+    "static/js/main.0cb6ba07.js"
+  ]
+}
