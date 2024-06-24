@@ -19,7 +19,7 @@ class NewsAPI {
     this.apiKey = `${environmentData.apiKey}`
   }
 
- getTopHeadlinesData = async ():Promise <AxiosResponse<TopHeadlinesDataInterface>> =>{
+ getTopHeadlinesData = async (page: number):Promise <AxiosResponse<TopHeadlinesDataInterface>> =>{
     return axios.get(`${this.base_url}${this.endpoints.top_headlines}${this.apiKey}`)
  }
 

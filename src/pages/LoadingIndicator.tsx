@@ -1,12 +1,14 @@
-import { ReactElement } from "react";
+import React, { ReactElement } from "react";
 
-function LoadingIndicator(): ReactElement{
-    return(
-        <div>
-            Loading Data...
-            <br></br>
-            Edit Loading Indicator file properly for UX
+function LoadingIndicator(): ReactElement {
+    return (
+        <div className="d-flex justify-content-center align-items-center" style={{ height: "100px" }}>
+            <div className="spinner-border text-primary" role="status">
+                <span className="sr-only"></span>
+            </div>
+            <span className="ml-2">Loading Data...</span>
         </div>
     );
 }
-export default LoadingIndicator
+
+export default LoadingIndicator;
