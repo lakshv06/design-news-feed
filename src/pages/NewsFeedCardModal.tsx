@@ -30,17 +30,10 @@ function NewsFeedCardModal(props: NewsFeedCardModalProps): ReactElement {
         <div>
             <div style={backdropStyles} onClick={() => setShowMore(false)}></div>
             <div style={modalStyles}>
-                <div className="modal-content">
+                <div className="modal-content p-3">
                     <div className="modal-header">
                         <h5 className="modal-title">{NewsFeedCardModalData.title}</h5>
-                        <button
-                            type="button"
-                            className="close"
-                            aria-label="Close"
-                            onClick={() => setShowMore(false)}
-                        >
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                       
                     </div>
                     <div className="modal-body">
                         <p>{NewsFeedCardModalData.content}</p>
@@ -48,7 +41,7 @@ function NewsFeedCardModal(props: NewsFeedCardModalProps): ReactElement {
                     <div className="modal-footer">
                         <button
                             type="button"
-                            className="btn btn-secondary"
+                            className="btn btn-outline-secondary"
                             onClick={() => setShowMore(false)}
                         >
                             Close

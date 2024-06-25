@@ -1,4 +1,4 @@
-import axios, { Axios, AxiosResponse } from "axios";
+import axios, {AxiosResponse } from "axios";
 import { TopHeadlinesDataInterface } from "../interface/global.interfaces";
 import environmentData from "../environment-constants";
 

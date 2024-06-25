@@ -28,3 +28,9 @@ export interface NewsFeedCardModalProps{
     NewsFeedCardModalData: ArticlesData;
     setShowMore: Dispatch<SetStateAction<boolean>>
 }
+
+export interface MessagingChatBoxDataProps{
+    MessagingChatBoxData: ArticlesData;
+    isFocused: boolean;
+    onClick: ()=>void;
+}
